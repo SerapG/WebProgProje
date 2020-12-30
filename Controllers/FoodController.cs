@@ -14,14 +14,11 @@ namespace Recipes.Controllers
     public class FoodController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private readonly IWebHostEnvironment _hostingEnvironment; 
+       
 
         public FoodController(ApplicationDbContext context)
         {
             _context = context;
-#pragma warning disable CS1717 // Atama aynı değişkene yapıldı
-            _hostingEnvironment = _hostingEnvironment;
-#pragma warning restore CS1717 // Atama aynı değişkene yapıldı
 
         }
 
