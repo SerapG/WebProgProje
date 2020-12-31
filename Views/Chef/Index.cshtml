@@ -43,7 +43,8 @@
                 @Html.DisplayFor(modelItem => item.Birth)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Image)
+                @* @Html.DisplayFor(modelItem => item.Image)*@
+                <img src="@Url.Content(item.Image)" class="d-block w-50" asp-append-version="true" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Information)

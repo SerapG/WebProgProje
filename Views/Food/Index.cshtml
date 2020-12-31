@@ -49,7 +49,8 @@
                 @Html.DisplayFor(modelItem => item.Recipe)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Banner)
+                @* @Html.DisplayFor(modelItem => item.Banner)*@
+                <img src="@Url.Content(item.Banner)" class="d-block w-50" asp-append-version="true" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Score)
