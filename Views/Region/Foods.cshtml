@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Recipes.Models.Food>
+
+<div class="row text-center mt-3">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 shadow">
+                <img class="card-img-top" src="@Html.DisplayFor(modelItem => item.Banner)" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">@Html.DisplayFor(modelItem => item.FoodName)</h4>
+                    <p class="card-text">@(item.Recipe.Substring(0, 50) + "...")</p>
+                </div>
+                <div class="card-footer">
+                    <a href="@("/foods/food/" + item.Id)" class="btn btn-primary">Devamını Gör</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

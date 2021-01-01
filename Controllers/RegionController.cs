@@ -43,6 +43,14 @@ namespace Recipes.Controllers
             return View(region);
         }
 
+        //HttpContext içerisinden region Query parametresini alarak linq ile veritabanından
+        //O Region id ye ait yemekleri çekerek model olarak region içerisindeki foods viewuna gönderdik.
+        public async Task<IActionResult> Foods([FromQuery(Name = "region")] int regionId)
+        {
+            var db = from food in _context.Food where food.RegionId == regionId select food;
+            return View(await db.ToListAsync());
+        }
+
         // GET: Region/Create
         public IActionResult Create()
         {
