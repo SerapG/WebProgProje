@@ -43,17 +43,16 @@
                 @Html.DisplayFor(modelItem => item.Birth)
             </td>
             <td>
-                @* @Html.DisplayFor(modelItem => item.Image)*@
-                <img src="@Url.Content(item.Image)" class="d-block w-50" asp-append-version="true" />
+                @Html.DisplayFor(modelItem => item.Image)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Information)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Gender.GenderName)
+                @Html.DisplayFor(modelItem => item.Gender.Id)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.WorldCuisines.Name)
+                @Html.DisplayFor(modelItem => item.WorldCuisines.Id)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

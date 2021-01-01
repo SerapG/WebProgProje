@@ -23,7 +23,7 @@ namespace Recipes.Data
       
         public DbSet<Chef> Chef { get; set; }
         public DbSet<Gender> Gender { get; set; }
-        public DbSet<WorldCuisines> WorldCuisines { get; set; }
+        public DbSet<Recipes.Models.WorldCuisines> WorldCuisines { get; set; }
 
     }
 }

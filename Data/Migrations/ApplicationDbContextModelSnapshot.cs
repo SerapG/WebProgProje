@@ -281,14 +281,17 @@ namespace Recipes.Data.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<int>("ChefId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CommentId")
+                        .HasColumnType("int");
+
                     b.Property<string>("FoodName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("LanguageId")
                         .HasColumnType("int");
-
-                    b.Property<string>("Materials")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Recipe")
                         .HasColumnType("nvarchar(max)");
@@ -302,6 +305,8 @@ namespace Recipes.Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("ChefId");
 
                     b.HasIndex("LanguageId");
 
@@ -441,6 +446,12 @@ namespace Recipes.Data.Migrations
                     b.HasOne("Recipes.Models.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Recipes.Models.Chef", "Chef")
+                        .WithMany()
+                        .HasForeignKey("ChefId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

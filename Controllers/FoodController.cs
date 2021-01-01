@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
@@ -15,20 +14,12 @@ namespace Recipes.Controllers
     public class FoodController : Controller
     {
         private readonly ApplicationDbContext _context;
-<<<<<<< HEAD
-        private readonly IWebHostEnvironment _hostingEnvironment;
-=======
        
->>>>>>> 94aeb9dc47cc6814ee5baf745b7d48968de2a8f6
 
-        public FoodController(ApplicationDbContext context, IWebHostEnvironment hostingEnvironment)
+        public FoodController(ApplicationDbContext context)
         {
             _context = context;
-<<<<<<< HEAD
-            _hostingEnvironment = hostingEnvironment;
-=======
 
->>>>>>> 94aeb9dc47cc6814ee5baf745b7d48968de2a8f6
         }
 
         // GET: Food
@@ -79,19 +70,6 @@ namespace Recipes.Controllers
         {
             if (ModelState.IsValid)
             {
-                string webRootPath = _hostingEnvironment.WebRootPath;
-                var files = HttpContext.Request.Form.Files;
-
-
-                string fileName = Guid.NewGuid().ToString();
-                var uploads = Path.Combine(webRootPath, @"images\food");
-                var extension = Path.GetExtension(files[0].FileName);
-
-                using (var fileStream = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
-                {
-                    files[0].CopyTo(fileStream);
-                }
-                food.Banner = @"\images\food\" + fileName + extension;
                 _context.Add(food);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

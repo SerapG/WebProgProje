@@ -48,24 +48,94 @@
 
     <!-- Page Features -->
     <div class="row text-center">
-        @model IEnumerable<Recipes.Models.Food>
 
-        <div class="row text-center mt-3">
-            @foreach (var item in Model)
-            {
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card h-100 shadow">
-                        <img class="card-img-top" src="@Html.DisplayFor(modelItem => item.Banner)" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">@Html.DisplayFor(modelItem => item.FoodName)</h4>
-                            <p class="card-text">@(item.Recipe.Substring(0, 50) + "...")</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="@("/foods/food/" + item.Id)" class="btn btn-primary">Devamını Gör</a>
-                        </div>
-                    </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="https://www.kevserinmutfagi.com/wp-content/uploads/2019/09/kabune3.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
                 </div>
-            }
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="https://www.kevserinmutfagi.com/wp-content/uploads/2019/09/kabune3.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="https://www.kevserinmutfagi.com/wp-content/uploads/2019/09/kabune3.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="https://www.kevserinmutfagi.com/wp-content/uploads/2019/09/kabune3.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-5 ml-auto mr-auto">
+            <div class="card h-100">
+                <img class="card-img-top" src="https://www.kevserinmutfagi.com/wp-content/uploads/2019/09/kabune3.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 ml-auto mr-auto">
+            <div class="card h-100">
+                <img class="card-img-top" src="https://www.kevserinmutfagi.com/wp-content/uploads/2019/09/kabune3.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 ml-auto mr-auto">
+            <div class="card h-100">
+                <img class="card-img-top" src="https://www.kevserinmutfagi.com/wp-content/uploads/2019/09/kabune3.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
         </div>
     </div>
 

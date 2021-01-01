@@ -9,7 +9,6 @@ namespace Recipes.Models
     {
         public int Id { get; set; }
         public string FoodName { get; set; }
-        public string Materials { get; set; }
         public string Recipe { get; set; }
         public string Banner { get; set; }
         public double? Score { get; set; }
@@ -22,7 +21,8 @@ namespace Recipes.Models
 
         public int RegionId { get; set; }
         public Region Region { get; set; }
-       
+        public int  ChefId { get; set; }
+        public Chef Chef { get; set; }
         
 
     }
