@@ -32,6 +32,18 @@ namespace Recipes.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
 
+        public async Task<IActionResult> FamousChefs()
+        {
+            var famousChefs = await _context.Chef.ToListAsync();
+            return View(famousChefs);
+        }
+
+        public async Task<IActionResult> Info(int id)
+        {
+            var db = from chef in _context.Chef where chef.Id == id select chef;
+            return View(await db.Include(c => c.WorldCuisines).FirstOrDefaultAsync());
+        }
+
         // GET: Chef/Details/5
         public async Task<IActionResult> Details(int? id)
         {

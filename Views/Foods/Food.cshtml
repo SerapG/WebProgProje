@@ -1,11 +1,13 @@
 ﻿@model Recipes.Models.Food
 
-<h1>@Model.FoodName</h1> 
+<div class="container mt-5 mb-5">
+    <h1>@Model.FoodName</h1>
 
-<img src="@Model.Banner" />
+    <img src="@Model.Banner" class="w-100" />
 
-<p>@("Puan: " + Model.Score)</p>
+    <p class="font-weight-bolder mt-3 ">@("Puan: " + Model.Score)</p>
 
-<p>@("Materyaller: " + Model.Materials)</p>
+    <p>@( Model.Materials)</p>
 
-<p>@Model.Recipe</p>
+    <p>@Model.Recipe</p>
+</div>

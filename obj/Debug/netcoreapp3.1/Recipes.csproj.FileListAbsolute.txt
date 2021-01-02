@@ -314,3 +314,12 @@ C:\Users\Serap\Desktop\Recipes\obj\Debug\netcoreapp3.1\Razor\Views\Foods\Details
 C:\Users\Serap\Desktop\Recipes\obj\Debug\netcoreapp3.1\Razor\Views\Foods\Edit.cshtml.g.cs
 C:\Users\Serap\Desktop\Recipes\obj\Debug\netcoreapp3.1\Razor\Views\Foods\Index.cshtml.g.cs
 C:\Users\Serap\Desktop\Recipes\obj\Debug\netcoreapp3.1\Razor\Views\Foods\Food.cshtml.g.cs
+C:\Users\Serap\Desktop\Recipes\obj\Debug\netcoreapp3.1\Razor\Views\Chef\FamousChefs.cshtml.g.cs
+C:\Users\Serap\Desktop\Recipes\obj\Debug\netcoreapp3.1\Razor\Views\Chef\Info.cshtml.g.cs
+C:\Users\Serap\Desktop\Recipes\obj\Debug\netcoreapp3.1\Recipes.csproj.GenerateResource.cache
+C:\Users\Serap\Desktop\Recipes\bin\Debug\netcoreapp3.1\tr-TR\Recipes.resources.dll
+C:\Users\Serap\Desktop\Recipes\obj\Debug\netcoreapp3.1\tr-TR\Recipes.resources.dll
+C:\Users\Serap\Desktop\Recipes\obj\Debug\netcoreapp3.1\Recipes.Resources.Views.Shared._Layout.tr-TR.resources
+C:\Users\Serap\Desktop\Recipes\bin\Debug\netcoreapp3.1\en-US\Recipes.resources.dll
+C:\Users\Serap\Desktop\Recipes\obj\Debug\netcoreapp3.1\Recipes.Resources.Views.Shared._Layout.en-US.resources
+C:\Users\Serap\Desktop\Recipes\obj\Debug\netcoreapp3.1\en-US\Recipes.resources.dll
