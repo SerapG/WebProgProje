@@ -9193,11 +9193,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Serap\\Desktop\\Recipes\\Recipes.csproj",
+      "projectUniqueName": "C:\\Users\\Serap\\Desktop\\WebProgProje\\Recipes.csproj",
       "projectName": "Recipes",
-      "projectPath": "C:\\Users\\Serap\\Desktop\\Recipes\\Recipes.csproj",
+      "projectPath": "C:\\Users\\Serap\\Desktop\\WebProgProje\\Recipes.csproj",
       "packagesPath": "C:\\Users\\Serap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Serap\\Desktop\\Recipes\\obj\\",
+      "outputPath": "C:\\Users\\Serap\\Desktop\\WebProgProje\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Serap\\AppData\\Roaming\\NuGet\\NuGet.Config",

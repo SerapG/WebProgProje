@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AmRdMyydxvc2Dk7B72JXtvARHVWkgAqzf8mrdexyw/jO1Bzyjeinc4ahlWSrgDKYPYu1P6icnmlTbFFyy5mnBA==",
+  "dgSpecHash": "BJEa3EcDrzgMkoPHDu+nqtQjhLbJuy+YuqL3As5OkFeb5x3uZzfb02xT3HVi5gctiomMYXS7C+B+jK1aDweqlg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Serap\\Desktop\\Recipes\\Recipes.csproj",
+  "projectFilePath": "C:\\Users\\Serap\\Desktop\\WebProgProje\\Recipes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Serap\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.10\\microsoft.aspnetcore.cryptography.internal.3.1.10.nupkg.sha512",
     "C:\\Users\\Serap\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.10\\microsoft.aspnetcore.cryptography.keyderivation.3.1.10.nupkg.sha512",
