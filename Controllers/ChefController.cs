@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -10,8 +11,10 @@ using Microsoft.EntityFrameworkCore;
 using Recipes.Data;
 using Recipes.Models;
 
+
 namespace Recipes.Controllers
 {
+    [Authorize]
     public class ChefController : Controller
     {
         private readonly ApplicationDbContext _context;
