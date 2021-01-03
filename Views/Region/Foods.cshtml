@@ -8,7 +8,7 @@
                 <img class="card-img-top" src="@Html.DisplayFor(modelItem => item.Banner)" alt="">
                 <div class="card-body">
                     <h4 class="card-title">@Html.DisplayFor(modelItem => item.FoodName)</h4>
-                    <p class="card-text">@(item.Recipe.Substring(0, 50) + "...")</p>
+                    <p class="card-text">@(item.Recipe.Length <= 50 ? item.Recipe : item.Recipe.Substring(0, 50) + "...")</p>
                 </div>
                 <div class="card-footer">
                     <a href="@("/foods/food/" + item.Id)" class="btn btn-primary">Devamını Gör</a>
